@@ -178,24 +178,12 @@ function wpad_get_people_data( $id ) {
 
 	$username = explode( ' on', $username );
 	$username = '<a href="' . esc_url( $url ) . '">' . trim( $username[0] ) . '</a>';
-	
+
 	if ( ! empty( $username ) ) {
 		$content .= '<p class="username">' . $username . '</p>';
 	}
-	if ( ! empty( $employer ) ) {
-		//$content .= '<p class="employer"><strong>Company:</strong> ' . $employer . '</p>';
-	}
-	if ( ! empty( $job ) ) {
-		//$content .= '<p class="job"><strong>Job title:</strong> ' . $job . '</p>';
-	}
 	if ( ! empty( $country ) ) {
 		$content .= '<p class="country">' . $country . '</p>';
-	}
-	if ( ! empty( $website ) ) {
-		//$content .= '<p class="website"><strong>Website:</strong> ' . $website . '</p>';
-	}
-	if ( ! empty( $bio ) ) {
-		//$content .= '<div class="bio">' . $bio . '</div>';
 	}
 	$content .= '</div>';
 
